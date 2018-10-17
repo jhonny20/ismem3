@@ -5,7 +5,29 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
+  <h2>Cesar Aquino</h2>
+
+
+
+
+
+  <button ion-button full (click)="tomarFoto()">
+    <ion-icon name="camera">
+    </ion-icon> &nbsp;
+    Tomar foto
+  </button>
+
+  <img [src]="base64Image" *ngIf="base64Image" alt="" />
+
+
+
+
+
+
+
+
+
+  <img src="assets/imgs/freefire.jpg" alt="">
   <p>
     This starter project comes with simple tabs-based layout for apps
     that are going to primarily use a Tabbed UI.
