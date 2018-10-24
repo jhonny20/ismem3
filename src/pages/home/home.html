@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Cesar Aquino</h2>
+  <h2>Jhonny Paulino</h2>
 
 
 
@@ -19,10 +19,12 @@
 
   <img [src]="base64Image" *ngIf="base64Image" alt="" />
 
-
-
-
-
+ <ion-row>
+    <ion-col col-6 *ngFor="let foto of fotos">
+      <img [src]="foto" *ngIf="foto" alt="" />
+  </ion-col>
+</ion-row>
+   
 
 
 
